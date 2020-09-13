@@ -1,7 +1,10 @@
-// Testing running playing a sound
+const player = require("play-sound")();
 
-const player = require('play-sound')();
+const app = require("express")();
 
-player.play('chime.mp3', {}, err => {
-    console.log(err);
+app.get("/chime", (req, res) => {
+  player.play("chime.mp3", {}, null);
+  res.status(204).send();
 });
+
+app.listen(30080);
