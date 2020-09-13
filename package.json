@@ -1,0 +1,14 @@
+{
+  "name": "http-play-sound",
+  "version": "0.0.1",
+  "description": "This is a very simple example or proof-of-concept of how you can receive a HTTP post request to play a sound.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron Saray",
+  "license": "MIT",
+  "dependencies": {
+    "play-sound": "^1.1.3"
+  }
+}
