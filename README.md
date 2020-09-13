@@ -7,6 +7,7 @@ This is a very simple example or proof-of-concept of how you can receive a HTTP 
 * Install pm2: `sudo npm install -g pm2`
 * Checkout code: `git clone git@github.com:aaronsaray/http-play-sound.git`
 * Change directory: `cd http-play-sound`
+* Install NPM `npm install`
 * Start with PM2: `pm2 start app.js`
 * Generate start up script and follow instructions: `pm2 startup systemd`
 * Save dump file (for reboots): `pm2 save`
