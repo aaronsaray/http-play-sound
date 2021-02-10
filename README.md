@@ -15,9 +15,11 @@ This is a very simple example or proof-of-concept of how you can receive a HTTP 
 ## Usage
 
 * Make sure speakers are on
-* Post to `http://your-host-here:30080/chime`
+* Post to `http://your-host-here:30080/chime` for a chime
+* Post to `http://your-host-here:30080/emergency` for a chime
 
 ## Credits
 
 [MP3 Sound included in repository](http://soundbible.com/1599-Store-Door-Chime.html)
 
+[MP3 Sound included in repository](https://soundbible.com/1577-Siren-Noise.html)

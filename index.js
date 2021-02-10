@@ -7,4 +7,9 @@ app.post("/chime", (req, res) => {
   res.status(204).send();
 });
 
+app.post("/emergency", (req, res) => {
+  player.play("emergency.mp3", {}, null);
+  res.status(204).send();
+});
+
 app.listen(30080);
