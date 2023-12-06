@@ -1,15 +1,15 @@
-const player = require("play-sound")();
+import 'dotenv/config';
+import express from 'express';
+import ListAction from './lib/list.js';
+import { PlayMiddleware, PlayAction } from './lib/play.js';
+import UploadAction from './lib/upload.js';
 
-const app = require("express")();
+const app = express();
+app.use(express.json());
+app.set('json spaces', 2);
 
-app.post("/chime", (req, res) => {
-  player.play("chime.mp3", {}, null);
-  res.status(204).send();
-});
+app.get('/list', ListAction);
+app.post('/play/:sound', PlayMiddleware, PlayAction);
+app.post('/upload', UploadAction);
 
-app.post("/emergency", (req, res) => {
-  player.play("emergency.mp3", {}, null);
-  res.status(204).send();
-});
-
-app.listen(30080);
+app.listen(process.env.HTTP_PLAY_SOUND_PORT || 30080);

@@ -1,24 +1,33 @@
 {
   "name": "http-play-sound",
-  "version": "0.0.1",
-  "description": "This is a very simple example or proof-of-concept of how you can receive a HTTP post request to play a sound.",
-  "main": "index.js",
+  "type": "module",
+  "version": "2.0.0",
+  "description": "Play a sound using local sound player via HTTP request.",
   "scripts": {
-    "eslint": "eslint *.js",
+    "init": "node init/index.js",
+    "lint": "eslint .",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aaron Saray",
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.17.1",
-    "play-sound": "^1.1.3"
+  "volta": {
+    "node": "20.10.0",
+    "npm": "10.2.4"
   },
   "devDependencies": {
-    "eslint": "^7.9.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.1.1"
+    "eslint": "^8.55.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "multer": "^1.4.5-lts.1",
+    "play-sound": "^1.1.6"
   }
 }
