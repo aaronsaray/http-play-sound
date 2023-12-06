@@ -3,7 +3,6 @@
   "type": "module",
   "version": "2.0.0",
   "description": "Play a sound using local sound player via HTTP request.",
-  "main": "index.js",
   "scripts": {
     "init": "node init/index.js",
     "lint": "eslint .",
